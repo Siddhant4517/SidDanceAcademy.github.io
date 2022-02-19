@@ -1,0 +1,62 @@
+//- index.pug
+doctype html
+html
+  head
+    Title Sid Dance Academy 
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/logo.png")
+                | SDA
+
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact Us]
+
+    section#introsection 
+        div Welcome to Siddhant's Dance Academy 
+        div.small Eat Sleep Dance Repeat 
+
+    section#missionsection  
+        h2 Our Mission 
+        div.card 
+          h3  Dance Perfection 
+          div.card-box
+                div.card-img
+                    img(src="/static/pic1.png")
+                div.card-content
+                    p This is the best dance academy of the universe
+        div.card 
+          h3  Dance the way you like 
+          div.card-box
+                div.card-img
+                    img(src="/static/pic2.png")
+                div.card-content
+                    p This is the best dance academy of the universe 
+        div.card 
+          h3  Dance Expert 
+          div.card-box
+                div.card-img
+                    img(src="/static/pic3.jpg")
+                div.card-content
+                    p This is the best dance academy of the universe 
+       
+    
+    section#sponsorsection 
+        h2 Our Sponsors 
+        div#sponsors
+            img(src="/static/1.png", alt= "Sponsor Image", class= "spImage")
+            img(src="/static/2.jpg", alt= "Sponsor Image", class= "spImage")
+            img(src="/static/3.png", alt= "Sponsor Image", class= "spImage")
+            img(src="/static/4.png", alt= "Sponsor Image", class= "spImage")
+
+    footer#footer
+        | Copyright © 2019 SidDanceAcademy.com | All Rights Reserved 
+
+    script
+      include ../static/index.js
