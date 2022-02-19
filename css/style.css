@@ -1,0 +1,200 @@
+/* Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+html{
+    scroll-behavior: smooth;
+}
+.img{
+    height: 50px;
+}
+/* Navbar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: " ";
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+
+}
+/* Navbar: Logo and image */
+#logo{
+    margin: 10px 35px;
+}
+#logo img{
+    margin: 10px 34px;
+    height: 50px;
+}
+/* List */
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    font-size: 1.2rem;
+    list-style: none;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    margin: 10px 20px;
+    padding: 6px 6p;
+}
+#navbar ul li a:hover{
+    color: black;
+    border-radius: 20px;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 400px;
+    align-items: center;
+    justify-content: center;
+    height: 440px;
+}
+#home::before{
+    content: " ";
+    position: absolute;
+    background: url('../italian-cuisine-g3f57bad17_1920.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.9;
+    width: 100%;
+    height: 538px;
+    top: 0px;
+    left: 0px;
+}
+#home h1{
+    color: white;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    align-items: center;
+}
+#home p{
+    color: white;
+    font-size: 1.5rem;
+    padding: 12px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    text-align: center;
+}
+.btn{
+    padding: 10px 20px;
+    border: 5px solid white;
+    background-color: burlywood;
+    margin: 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(27, 56, 56);
+    color: white;
+}
+/* Utility Class */
+.h-primary{
+    padding: 0px;
+    font-size: 3.5rem;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+.h-secondary{
+    padding: 15px;
+    font-size: 2.5rem;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+.center{
+    text-align: center;
+}
+
+/* Sevices */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid black;
+    margin: 16px;
+    padding: 24px;
+    border-radius: 20px;
+    background-color: rgb(243, 233, 233);
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+    padding: 15px;
+}
+
+/* Client section */
+#client-section{
+    position: relative;
+}
+#client-section::before{
+    content: " ";
+    position: absolute;
+    background: url('../coffee-beans-g6d075e662_1920.jpg');
+    z-index: -1;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 25px;
+}
+#clients img{
+    height: 150px;
+}
+/* Contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: " ";
+    position: absolute;
+    background: url('../telephone-g1a5ca5036_1920.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 90%;
+    padding: 0.4rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 35%;
+}
+#contact-box label{
+    font-size: 1.2rem;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+}
